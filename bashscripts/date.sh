@@ -1,0 +1,5 @@
+
+
+
+#!/nrc/bin/bash
+date
