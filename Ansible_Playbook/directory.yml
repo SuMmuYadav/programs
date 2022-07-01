@@ -1,0 +1,8 @@
+
+---
+- hosts: localhost
+  tasks:
+  - name: Creating an empty file
+    file:
+      path: "/home/devops-1/sumit_workspace"
+      state: touch

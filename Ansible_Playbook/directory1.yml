@@ -1,0 +1,8 @@
+---
+
+- hosts: localhost
+  tasks:
+  - name: Creating a new directory
+    file:
+      path: "/home/devops-1/sumit_workspace"
+      state: directory

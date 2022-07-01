@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create multiple files
+    file:
+      path: /home/devops-1/sumit_workspace/
+      state: touch
+    with_item:
+    - test1.txt
+    - text2.txt
+    - text3.txt
