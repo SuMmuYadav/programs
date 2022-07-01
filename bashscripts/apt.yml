@@ -1,0 +1,8 @@
+---
+- name: Install latest version of "openjdk-6-jdk" ignoring "install-recommends"
+  tasks:
+  - name: install openjdk-6-jdk packages
+    apt:
+      name:openjdk-6-jdk
+      state: latest
+      install_recommends: no
