@@ -1,13 +1,12 @@
+
 pipeline {
     agent any
+
     stages {
-        stage('Addition')
-        {
-            steps 
-            {
-                sh bashscripts/add.sh $n1 $n2
+        stage('Addition') {
+            steps {
+               sh "bashscripts/add.sh $num1 $num2"
             }
         }
-        
-        }
     }
+}
