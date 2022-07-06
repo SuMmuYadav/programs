@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('Addition')
+        {
+            steps 
+            {
+                sh bashscripts/add.sh $n1 $n2
+            }
+        }
+        
+        }
+    }
