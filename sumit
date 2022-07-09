@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Addition') {
+            steps {
+               sh "bashscripts/sumit.sh $name"
+            }
+        }
+    }
+}
