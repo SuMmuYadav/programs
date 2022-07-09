@@ -1,4 +1,7 @@
 #!/bin/bash
+num1=$1
+num2=$2
 
-add=$(($1+$2))
-echo $add
+Addition=$(( $num1 + $num2 ))
+
+echo "The Sum of num1 & num2 is $Addition"
