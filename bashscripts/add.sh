@@ -1,6 +1,8 @@
+
 #!/bin/bash
-num1=$1
-num2=$2
+
+read num1
+read num2
 
 Addition=$(( $num1 + $num2 ))
 
