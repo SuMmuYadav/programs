@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Arithmetic') {
             steps {
-                echo 'Hello World'
+                sh "bashscripts/calculator.sh $num1 $num2"
             }
         }
     }
