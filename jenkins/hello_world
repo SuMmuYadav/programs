@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    parameters {
+        choice(name: "Operator", choices: ["1", "2", "3", "4", "5", "6"])
+        }
     stages {
         stage('Arithmetic') {
             steps {
-                sh "bashscripts/calculator.sh $ch $a $b $res"
+                sh "bashscripts/calculator.sh $a $b"
             }
         }
     }
