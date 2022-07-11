@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Arithmetic') {
             steps {
-                sh "bashscripts/calculator.sh $num1 $num2"
+                sh "bashscripts/calculator.sh $a $b"
             }
         }
     }
