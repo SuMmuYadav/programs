@@ -1,0 +1,11 @@
+---
+- name: This is a hello-world example
+  debug: msg="Hello World"
+
+
+- name: This is a hello-world example
+  debug: msg="hey"
+
+
+- name: This is a hello-world example
+  debug: msg="how are you"

@@ -1,0 +1,14 @@
+---
+- name: docker install /home/ncs/Desktop/
+  become: true
+  unarchive:
+    src: https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.346.1/jenkins.war
+    dest: /home/ncs/Desktop/jenkins
+    mode: 0777
+    remote_src: yes
+
+
+- name: install jenkins
+  apt:
+    name: jenkins
+    state: latest

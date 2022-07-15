@@ -1,0 +1,9 @@
+---
+- name: Creating a new directory
+  file:
+    path: /home/ncs/snap/"{{ item }}"
+    state: directory
+  with_items:
+  - sumit
+  - aman
+  - pratik
